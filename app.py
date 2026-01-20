@@ -10,7 +10,7 @@ gemini_api_key = os.getenv("project-testing")
 model = ChatGoogleGenerativeAI(model = 'gemini-2.5-flash-lite',api_key = gemini_api_key,temperature=0.9)
 
 # Let's create the sidebar to upload the resume
-st.sidebar.b
+
 st.sidebar.title(':red[Upload your Resume here(ONLY PDF format)]')
 file = st.sidebar.file_uploader('Resume',type = ['pdf']) # for uploading a resume in this file
 if file:
